@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mohamed Abdelgawad Saleh | Network Engineer</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#F6F3FF;--panel:#FFFFFF;--ink:#2A2160;--muted:#5B5584;--line:#DDD5F7;--brand:#7C4DDB;--on:#FFFFFF;--soft:#EDE6FF;--code:#EFEAFF;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14102A;--panel:#1D1838;--ink:#EFEAFF;--muted:#B3A9DA;--line:#2F2858;--brand:#A98BFF;--on:#14102A;--soft:#2A2150;--code:#110D24}}
+:root[data-theme="dark"]{--bg:#14102A;--panel:#1D1838;--ink:#EFEAFF;--muted:#B3A9DA;--line:#2F2858;--brand:#A98BFF;--on:#14102A;--soft:#2A2150;--code:#110D24}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(80px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 "DM Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--panel);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.2rem;color:var(--ink);text-decoration:none}
+.logo i{font-style:normal;display:grid;place-items:center;width:38px;height:38px;border-radius:10px;background:var(--brand);color:var(--on)}
+.links{display:flex;align-items:center;gap:6px}
+.links a{color:var(--ink);text-decoration:none;padding:8px 12px;border-radius:8px;font-weight:500;transition:background .15s,color .15s}
+.links a:hover{background:var(--soft)}
+.links a.on{color:var(--brand);background:var(--soft)}
+.ib{background:none;border:0;color:var(--ink);cursor:pointer;width:40px;height:40px;border-radius:8px;display:grid;place-items:center;font-size:1.2rem}
+.ib:hover{background:var(--soft)}
+#menuBtn{display:none}
+a:focus-visible,button:focus-visible{outline:3px solid var(--brand);outline-offset:2px}
+section{padding:72px 0}
+section:nth-of-type(even){background:var(--panel)}
+h2{font-size:2rem;margin:0 0 6px;letter-spacing:-.01em}
+.sub{color:var(--muted);margin:0 0 28px}
+.hero{display:grid;grid-template-columns:1fr;gap:30px;align-items:center;min-height:calc(100vh - 68px);padding:40px 0}
+.pill{display:inline-block;background:var(--soft);color:var(--brand);padding:5px 14px;border-radius:999px;font-weight:500;font-size:.92rem}
+.hi{font-size:2rem;font-weight:700;margin:18px 0 0}
+h1{font-size:clamp(2.3rem,6.4vw,4rem);line-height:1.08;margin:6px 0 10px;color:var(--brand);letter-spacing:-.02em}
+.role{font-size:1.4rem;font-weight:700;color:var(--brand);margin:0 0 14px}
+.lead{color:var(--brand);max-width:46ch;margin:0 0 24px}
+.btn{display:inline-block;font:inherit;font-weight:500;padding:13px 26px;border-radius:8px;background:var(--brand);color:var(--on);border:2px solid var(--brand);text-decoration:none;cursor:pointer;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.alt{background:transparent;color:var(--brand);margin-left:8px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:18px}
+section:nth-of-type(even) .card{background:var(--bg)}
+.card h3{margin:0 0 4px;font-size:1.05rem}.card p{margin:0;color:var(--muted);font-size:.95rem}
+.tl{border-left:3px solid var(--brand);padding-left:20px;margin-left:6px;display:grid;gap:20px}
+.tl b{display:block;font-size:1.1rem}.tl span{color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{background:var(--soft);color:var(--ink);border-radius:999px;padding:6px 15px;font-size:.93rem;transition:background .15s,color .15s}
+.chips span:hover{background:var(--brand);color:var(--on)}
+.group{margin-bottom:22px}.group h3{margin:0 0 10px;font-size:1.05rem}
+.proj{width:100%;text-align:left;font:inherit;color:inherit;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px;cursor:pointer;transition:border-color .2s,transform .2s}
+.proj:hover,.proj[aria-expanded="true"]{border-color:var(--brand);transform:translateY(-3px)}
+.proj b{display:block;font-size:1.08rem}.proj span{color:var(--muted);font-size:.92rem}
+.detail{grid-column:1/-1;background:var(--panel);border:2px solid var(--brand);border-radius:12px;padding:20px;animation:open .25s ease-out}
+@keyframes open{from{opacity:0;transform:translateY(-6px)}}
+.detail dl{margin:0;display:grid;grid-template-columns:90px 1fr;gap:8px 14px}
+.detail dt{font-weight:700;color:var(--brand)}.detail dd{margin:0}
+pre{background:var(--code);border-radius:8px;padding:12px;overflow-x:auto;font:13px/1.5 ui-monospace,Menlo,Consolas,monospace;margin:14px 0 0}
+.rows{display:grid;gap:14px}
+.mail b{min-width:84px}
+.mail{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.mail code{background:var(--soft);padding:10px 16px;border-radius:8px;user-select:all;word-break:break-all}
+footer{text-align:center;color:var(--muted);padding:26px 0 36px;font-size:.92rem}
+.center{text-align:center}
+h2.big{font-size:clamp(2.4rem,6vw,3.4rem);margin:14px 0 0}
+.bar{width:64px;height:5px;border-radius:4px;background:var(--brand);margin:16px auto 28px}
+.about p{max-width:70ch;margin:0 auto 12px;color:var(--brand)}
+.info{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:26px 0 28px}
+.info span{border:1px solid var(--line);background:var(--soft);color:var(--brand);border-radius:999px;padding:9px 18px;font-size:.95rem}
+.note{color:var(--muted);font-size:.92rem;min-height:1.4em;margin:12px 0 0}
+@media (max-width:820px){
+ .links{display:none;position:absolute;top:68px;left:0;right:0;flex-direction:column;align-items:stretch;background:var(--panel);border-bottom:1px solid var(--line);padding:10px 22px}
+ .links.open{display:flex}
+ #menuBtn{display:grid}
+ .hero{grid-template-columns:1fr;min-height:0;text-align:center}
+ .lead{margin-inline:auto} .btn.alt{margin:10px 0 0}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav>
+ <div class="wrap">
+  <a class="logo" href="#about"><i>M</i>MOHAMED</a>
+  <div class="links" id="links">
+   <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a>
+  </div>
+  <div style="display:flex;gap:4px">
+   <button class="ib" id="theme" aria-label="Toggle light and dark theme">☀</button>
+   <button class="ib" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+  </div>
+ </div>
+</nav>
+
+<div class="wrap">
+ <div class="hero" id="top">
+  <div>
+   <span class="pill">Available for work</span>
+   <p class="hi">Hi, I'm</p>
+   <h1>Mohamed Abdelgawad Saleh</h1>
+   <p class="role">Network Security Engineer</p>
+   <p class="lead">Network security engineer with hands-on Cisco and Fortinet FortiGate experience, building secure, well-documented network infrastructure.</p>
+   <a class="btn" href="#contact">Contact me</a><a class="btn alt" href="#projects">View projects</a>
+  </div>
+ </div>
+</div>
+
+<section id="about"><div class="wrap center">
+ <span class="pill">Who I am</span>
+ <h2 class="big">About</h2>
+ <div class="bar"></div>
+ <div class="about">
+  <p>I'm a network security engineer who learned networking by building it: routing and switching with Cisco, firewalls with Fortinet FortiGate, and virtual labs that behave like real company networks.</p>
+  <p>At the National Telecommunication Institute (NTI) I trained on CCNA topics such as OSPF, EIGRP, VLANs, STP, EtherChannel, ACLs and NAT, then completed a network security internship configuring FortiGate policies and monitoring security logs.</p>
+  <p>I care about networks that are secure, documented and easy to hand over.</p>
+ </div>
+ <div class="info"><span>Network Security Engineer</span><span>Giza, Egypt</span><span>mohamedswelm40@gmail.com</span></div>
+ <a class="btn" href="Mohamed-Abdelgawad-Saleh-CV.pdf" download>Download CV</a>
+</div></section>
+
+<section id="skills"><div class="wrap">
+ <h2>Skills</h2>
+ <p class="sub">The tools and technologies I work with.</p>
+ <div id="skillList"></div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+ <h2>Projects</h2>
+ <p class="sub">Select a project to see the problem, solution and result.</p>
+ <div class="grid" id="projGrid"></div>
+</div></section>
+
+<section id="certifications"><div class="wrap">
+ <h2>Certifications</h2>
+ <p class="sub">Certifications and professional training.</p>
+ <div class="grid">
+  <div class="card"><h3>CCNA</h3><p>Cisco Certified Network Associate. Trained at NTI, Apr to Jun 2026.</p></div>
+  <div class="card"><h3>CCNP</h3><p>Cisco Certified Network Professional</p></div>
+  <div class="card"><h3>MCSA</h3><p>Microsoft Certified Solutions Associate</p></div>
+  <div class="card"><h3>RHCSA</h3><p>Red Hat Certified System Administrator</p></div>
+  <div class="card"><h3>Network Security Certificate</h3><p>National Telecommunication Institute (NTI)</p></div>
+  <div class="card"><h3>Network Security internship</h3><p>NTI, Jul to Aug 2026. FortiGate firewalls, security policies, log monitoring.</p></div>
+ </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+ <h2>Contact</h2>
+ <p class="sub">Tell me what you need to build or fix, and I'll reply with a plan and a price.</p>
+ <div class="rows">
+  <div class="mail"><b>Email</b><code>mohamedswelm40@gmail.com</code><button class="btn" type="button" data-copy="mohamedswelm40@gmail.com">Copy</button></div>
+  <div class="mail"><b>Phone</b><code>01148363595</code><button class="btn" type="button" data-copy="01148363595">Copy</button></div>
+  <div class="mail"><b>LinkedIn</b><code>linkedin.com/in/mohamed-abdelgawad-saleh-027b0b384</code><button class="btn" type="button" data-copy="https://www.linkedin.com/in/mohamed-abdelgawad-saleh-027b0b384">Copy</button><a class="btn alt" style="margin:0" href="https://www.linkedin.com/in/mohamed-abdelgawad-saleh-027b0b384" target="_blank" rel="noopener">Open</a></div>
+  <div class="mail"><b>Location</b><span>Giza, Egypt</span></div>
+ </div>
+</div></section>
+<footer>© Mohamed Abdelgawad Saleh</footer>
+
+<script>
+var root=document.documentElement,tb=document.getElementById("theme");
+function cur(){return root.dataset.theme||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light")}
+function icon(){tb.textContent=cur()=="dark"?"☾":"☀"}icon();
+tb.onclick=function(){root.dataset.theme=cur()=="dark"?"light":"dark";icon()};
+var lk=document.getElementById("links"),mb=document.getElementById("menuBtn");
+mb.onclick=function(){var o=lk.classList.toggle("open");mb.setAttribute("aria-expanded",o)};
+lk.addEventListener("click",function(e){if(e.target.tagName=="A"){lk.classList.remove("open");mb.setAttribute("aria-expanded","false")}});
+/* active link */
+var as=[].slice.call(lk.querySelectorAll("a")),secs=as.map(function(a){return document.querySelector(a.getAttribute("href"))});
+function spy(){var y=scrollY+120,k=-1;secs.forEach(function(s,i){if(s.offsetTop<=y)k=i});if(innerHeight+scrollY>=document.body.scrollHeight-4)k=secs.length-1;as.forEach(function(a,i){a.classList.toggle("on",i==k)})}
+addEventListener("scroll",spy,{passive:true});spy();
+/* skills */
+var S={"Network security":["Cisco technologies","Routing and switching","ACLs","NAT/PAT","IPv4/IPv6","Threat filtering","Log analysis","Security monitoring","Wireshark","Incident analysis","Troubleshooting"],"Firewalls and VPN":["Fortinet FortiGate","Security policies","Access control rules","IPsec VPN","SSL VPN"],"Routing and switching protocols":["OSPF","EIGRP","VLAN","STP","EtherChannel"],"System administration":["Windows Server","Active Directory","Group Policy","Ubuntu","Kali Linux","VMware Workstation Pro","VirtualBox"],"Soft skills":["Analytical thinking","Team collaboration","Communication","Technical writing","Problem solving","Time management"],"Languages":["English (advanced)","Arabic (native)"]};
+var sl=document.getElementById("skillList");
+Object.keys(S).forEach(function(g){var d=document.createElement("div");d.className="group";d.innerHTML="<h3>"+g+"</h3><div class='chips'>"+S[g].map(function(x){return "<span>"+x+"</span>"}).join("")+"</div>";sl.appendChild(d)});
+/* projects */
+var P=[
+{t:"FortiGate Next-Generation Firewall",g:"Fortinet FortiGate, firewall policies",p:"Company traffic needed to be inspected and controlled, both between internal users and the outside, and between internal segments.",s:"Deployed a FortiGate NGFW with security zones, strict firewall policies and application control to inspect and filter internal-to-external and east-west traffic.",k:"Fortinet FortiGate",r:"Only allowed traffic passes between zones, and applications are controlled by policy."},
+{t:"Secure VPN between Branches",g:"IPsec VPN, SSL VPN, ISP routing",p:"Two company branches and remote users needed to communicate across a service provider network without exposing company data.",s:"Connected the branches through the service provider in the middle, and protected the traffic with site-to-site and remote-access IPsec and SSL VPN tunnels.",k:"IPsec VPN, SSL VPN",r:"Branches and remote users reach company resources over encrypted tunnels that nobody on the path can read."},
+{t:"DHCP, TFTP and Syslog Server",g:"DHCP, TFTP, Syslog",p:"Clients needed IP addresses automatically, device configs needed a central backup, and there was no single place to read device logs.",s:"Built a server that gives IP addresses to clients with DHCP, stores configs and files with TFTP, and collects device logs with Syslog.",k:"DHCP, TFTP and Syslog services",r:"Clients get addresses automatically, configs are backed up on the server, and device logs appear on it."},
+{t:"Active Directory and Group Policy",g:"Windows Server, AD DS, GPO",p:"Users, groups and security rules needed one central, secure structure.",s:"Deployed Active Directory Domain Services, managed user accounts, security groups and OUs, and enforced Group Policy for password complexity, restricted admin privileges and automated desktop settings.",k:"Windows Server, Active Directory, Group Policy",r:"A secure, scalable user structure where security standards are enforced automatically."}];
+var grid=document.getElementById("projGrid"),openIdx=-1,det=null;
+function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;")}
+P.forEach(function(x,i){var b=document.createElement("button");b.className="proj";b.setAttribute("aria-expanded","false");b.innerHTML="<b>"+x.t+"</b><span>"+x.g+"</span>";
+ b.onclick=function(){var was=openIdx===i;if(det){det.remove();det=null}
+  grid.querySelectorAll(".proj").forEach(function(o){o.setAttribute("aria-expanded","false")});openIdx=-1;if(was)return;
+  openIdx=i;b.setAttribute("aria-expanded","true");det=document.createElement("div");det.className="detail";
+  det.innerHTML="<dl><dt>Problem</dt><dd>"+x.p+"</dd><dt>Solution</dt><dd>"+x.s+"</dd><dt>Tools</dt><dd>"+x.k+"</dd><dt>Result</dt><dd>"+x.r+"</dd></dl>"+(x.c?"<pre>"+esc(x.c)+"</pre>":"");
+  var cols=getComputedStyle(grid).gridTemplateColumns.split(" ").length,end=Math.min(P.length-1,Math.floor(i/cols)*cols+cols-1);
+  grid.insertBefore(det,grid.children[end+1]||null)};
+ grid.appendChild(b)});
+/* copy */
+[].slice.call(document.querySelectorAll("[data-copy]")).forEach(function(cb){var label=cb.textContent,code=cb.previousElementSibling;
+ function ok(){cb.textContent="Copied";setTimeout(function(){cb.textContent=label},1800)}
+ function fb(){try{var r=document.createRange();r.selectNodeContents(code);var g=getSelection();g.removeAllRanges();g.addRange(r);document.execCommand("copy")?ok():cb.textContent="Select and copy"}catch(e){cb.textContent="Select and copy"}}
+ cb.onclick=function(){try{navigator.clipboard.writeText(cb.dataset.copy).then(ok,fb)}catch(e){fb()}}});
+</script>
+</body>
+</html>
